@@ -1,7 +1,12 @@
 import React from 'react';
 
-const Edit = () => (
-  <div>This is the edit component</div>
-);
+const Edit = (props) => {
+  console.log(props)
+  return (
+    <div>
+      Editing the expense with id of {props.match.params.id}
+    </div>
+  );
+};
 
 export default Edit;
